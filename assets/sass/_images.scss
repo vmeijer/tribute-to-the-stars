@@ -1,0 +1,86 @@
+figure {
+  margin: 0;
+}
+
+figcaption {
+  display: block;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fas {
+  color: $decorative-primary;
+  margin-right: 10px;
+}
+
+#image,
+.extra_image {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}
+
+.extra_image {
+  margin-top: 20px;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-top: 0;
+  }
+}
+
+.divider {
+  color: $decorative-primary;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.divider-1,
+.divider-2,
+.divider-3 {
+  @extend .divider;
+}
+
+.divider-1::before {
+  @include divider-1();
+}
+
+.divider-2::before {
+  @include divider-2();
+}
+
+.divider-3::before {
+  @include divider-3();
+}
+
+.decorative-stars {
+  color: $decorative-secondary;
+  display: none;
+  height: 100%;
+  max-width: 20px;
+  overflow-wrap: break-word;
+  position: relative;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: inline-block;
+  }
+
+}
+.decorative-stars::before {
+  @include all-dividers();
+
+}
+
+.decorative-stars__left,
+.decorative-stars__right {
+  @extend .decorative-stars;
+}
+
+.decorative-stars__left {
+  left: -100px;
+}
+
+.decorative-stars__right {
+  right: -100px;
+}

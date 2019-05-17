@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $decorative-primary;
+  font-family: "Alegreya", "Times New Roman", serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+main,
+article,
+section,
+header {
+  display: block; // Fallback for older browsers
+}
+
+main {
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding: 20px 50px 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+li::before {
+  content: '\2606';
+  margin-right: 10px;
+}
