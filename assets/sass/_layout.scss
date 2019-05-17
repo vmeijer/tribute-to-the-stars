@@ -1,0 +1,35 @@
+.two-columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
+
+  .column {
+    flex: 100%;
+
+    @media screen and (min-width: $breakpoint-tablet) {
+      flex: 50%;
+    }
+  }
+
+  .column-left,
+  .column-right {
+    @extend .column;
+  }
+
+  .column-left {
+    @media screen and (min-width: $breakpoint-tablet) {
+      border-right: 1px solid $border;
+      padding-right: 25px;
+    }
+  }
+
+  .column-right {
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding-left: 25px;
+    }
+  }
+}

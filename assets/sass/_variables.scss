@@ -1,0 +1,16 @@
+// Breakpoints
+$breakpoint-mobile: 500px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Colors
+$black: #000;
+$white: #fff;
+$pigment-indigo: hsl(268, 100%, 25%);
+$fuchsia-blue: hsl(268, 50%, 50%);
+$schoolbus-yellow: hsl(51, 100%, 50%);
+
+$border: $black;
+$decorative-primary: $pigment-indigo;
+$decorative-secondary: $schoolbus-yellow;
+$links: $fuchsia-blue;

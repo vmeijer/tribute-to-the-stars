@@ -1,0 +1,61 @@
+a {
+  color: $links;
+  font-style: italic;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: $decorative-secondary;
+}
+
+h1 {
+  color: $decorative-secondary;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 1px $decorative-primary;
+  text-transform: capitalize;
+
+  @media screen and (min-width: $breakpoint-mobile) {
+    font-size: 42px;
+  }
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.paragraph {
+  line-height: 35px;
+
+  &.other {
+    margin-top: 100px;
+
+    hr {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.intro-block {
+  display: flex;
+  justify-content: center;
+  line-height: 35px;
+}
+
+.intro-block__decoration {
+  color: $decorative-secondary;
+  flex-grow: 1;
+  font-size: 100px;
+  transform: translate(0, 33%);
+}
+
+.intro-block__text {
+  flex-grow: 2;
+  font-weight: bold;
+  padding: 25px 25px 0;
+}
